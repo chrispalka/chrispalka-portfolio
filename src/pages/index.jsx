@@ -8,7 +8,7 @@ import styled from 'styled-components'
 const IndexPage = () => {
     return (
         <Layout>
-            <h1>Bye</h1>
+            <h1>TBD</h1>
         </Layout>
     )
 }
