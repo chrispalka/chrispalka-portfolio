@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-    max-width: 73.125rem;
-    padding: 0 1rem;
-    margin: 0 auto;
-    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
 `
 
 const Layout = ({ children }) => {
@@ -13,3 +13,22 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
+
+
+{/* <body>
+<div class="wrapper">
+  <aside>
+    <ul>
+      <li>Item</li>
+      ...
+    </ul>
+  </aside>
+  <main>
+    <div class="wrapper_inner">
+      <p>
+        ...
+       </p>
+     </div>
+   </main>
+ </div>
+</body> */}
