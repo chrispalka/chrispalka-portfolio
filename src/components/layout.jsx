@@ -13,22 +13,3 @@ const Layout = ({ children }) => {
 }
 
 export default Layout
-
-
-{/* <body>
-<div class="wrapper">
-  <aside>
-    <ul>
-      <li>Item</li>
-      ...
-    </ul>
-  </aside>
-  <main>
-    <div class="wrapper_inner">
-      <p>
-        ...
-       </p>
-     </div>
-   </main>
- </div>
-</body> */}
