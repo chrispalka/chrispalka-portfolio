@@ -15,9 +15,6 @@ module.exports = {
       options: {
         "name": "images",
         "path": "./src/images/",
-        "fonts": [
-          "lato"
-        ],
       },
       __key: "images"
     },
