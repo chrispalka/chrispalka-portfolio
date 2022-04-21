@@ -1,4 +1,5 @@
-import * as React from 'react'
+import React, { useEffect, useState } from 'react'
+import { CSSTransition } from 'react-transition-group'
 import Layout from '../components/Layout'
 import styled from 'styled-components'
 import GlobalStyle from '../components/GlobalStyles'
@@ -63,11 +64,25 @@ const SectionWrapperMain = styled.div`
 
 // markup
 const IndexPage = () => {
+    const [showAnimation, setShowAnimation] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setShowAnimation(true)
+        }, 500)
+    }, [])
     return (
         <>
             <GlobalStyle />
             <Layout>
-                <SideNav />
+                <CSSTransition
+                    in={showAnimation}
+                    timeout={800}
+                    classNames="page"
+                    unmountOnExit
+                >
+                    <SideNav />
+                </CSSTransition>
                 <SectionWrapperMain>
                     <SectionWrapperInner>
                         <IntroSection id="home">CHRIS PALKA</IntroSection>
